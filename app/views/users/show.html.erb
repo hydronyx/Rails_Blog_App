@@ -1,0 +1,14 @@
+<h1> New user Added </h1>
+
+<p>
+  <strong>User</strong>
+  <%= @user.name %>
+</p>
+ 
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to 'Back', users_path %>
+| <%= link_to 'Edit', edit_user_path(@user) %>
