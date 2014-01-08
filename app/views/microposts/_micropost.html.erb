@@ -1,0 +1,10 @@
+<p>
+  <strong>Content:</strong>
+  <%= micropost.content %>
+</p>
+ 
+ <p>
+  <%= link_to 'Destroy Micropost', [micropost.user, micropost],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
